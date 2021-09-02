@@ -1,32 +1,38 @@
 <div class="container">
   <div class="row">
-    <div class="col-5 my-5">
+    <header>
+      <!-- Background image -->
       <div
-        class="bg-image hover-overlay ripple shadow-1-strong rounded"
-        data-mdb-ripple-color="light"
+        id="intro-example"
+        class="p-5 text-center bg-image"
+        style="
+          background-image: url('https://media.kingston.com/kingston/hero/ktc-articles-solutions-speed-up-your-mac-hero-lg.jpg');
+        "
       >
-        <img
-          src="https://mdbootstrap.com/img/new/fluid/city/113.jpg"
-          class="w-100"
-        />
-        <a href="#!">
-          <div
-            class="mask"
-            style="background-color: rgba(251, 251, 251, 0.2)"
-          ></div>
-        </a>
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+              <h1 class="mb-3">Welcome on my portfolio</h1>
+              <h5 class="mb-4">I want to present my projects for you!</h5>
+              <a
+                class="btn btn-outline-light btn-lg m-2"
+                [routerLink]="['/features']"
+                role="button"
+                rel="nofollow"
+                >View projects</a
+              >
+              <a
+                class="btn btn-outline-light btn-lg m-2"
+                href="https://mdbootstrap.com/docs/standard/"
+                target="_blank"
+                role="button"
+                >Send mail</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col-7">
-      <!-- Jumbotron -->
-      <div class="p-5 text-center bg-light">
-        <h1 class="mb-3">Home</h1>
-        <h4 class="mb-3">This homepage title</h4>
-        <a class="btn btn-outline-dark" rippleColor="dark" mdbRipple
-          >Read more</a
-        >
-      </div>
-      <!-- Jumbotron -->
-    </div>
+      <!-- Background image -->
+    </header>
   </div>
 </div>

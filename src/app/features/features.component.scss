@@ -1,0 +1,11 @@
+.mask {
+  visibility: hidden;
+}
+
+mdb-carousel:hover {
+  visibility: visible;
+
+  .mask {
+    visibility: visible;
+  }
+}

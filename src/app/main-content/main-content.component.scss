@@ -1,0 +1,13 @@
+// Header styles
+
+/* Default height for small devices */
+#intro-example {
+  height: calc(100vh - 5rem);
+}
+
+/* Height for devices larger than 992px */
+@media (min-width: 992px) {
+  #intro-example {
+    height: calc(100vh - 5rem);
+  }
+}
