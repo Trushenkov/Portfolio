@@ -2,12 +2,12 @@
 
 /* Default height for small devices */
 #intro-example {
-  height: calc(100vh - 3rem);
+  height: 100vh;
 }
 
 /* Height for devices larger than 992px */
 @media (min-width: 992px) {
   #intro-example {
-    height: calc(100vh - 5rem);
+    height: 100vh;
   }
 }
