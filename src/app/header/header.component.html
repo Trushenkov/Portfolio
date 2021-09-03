@@ -1,14 +1,14 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light shadow-1-strong">
-  <div class="container">
-    <a class="navbar-brand" [routerLink]="['/']" routerLinkActive="active">
+  <div class="container justify-content-end">
+    <!-- <a class="navbar-brand" [routerLink]="['/']" routerLinkActive="active">
       <img
         src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png"
         height="30"
         alt="Logo"
         loading="lazy"
       />
-    </a>
+    </a> -->
 
     <!-- Toggle button -->
     <button
@@ -35,7 +35,7 @@
             [routerLink]="['/']"
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
-            >Home</a
+            ><i class="fas fa-home"></i> Home</a
           >
         </li>
         <li class="nav-item">
@@ -45,7 +45,8 @@
             [routerLink]="['/projects']"
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
-            >Projects <span class="badge bg-success">Completed</span></a
+            ><i class="fas fa-bars"></i> Projects
+            <span class="badge bg-success">Completed</span></a
           >
         </li>
         <li class="nav-item">
@@ -55,7 +56,7 @@
             [routerLink]="['/develop-stack']"
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
-            >Language Skills</a
+            ><i class="fab fa-stack-overflow"></i> Development Stack</a
           >
         </li>
         <li class="nav-item">
@@ -65,7 +66,7 @@
             [routerLink]="['/about']"
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
-            >About</a
+            ><i class="far fa-user-circle"></i> About</a
           >
         </li>
       </ul>

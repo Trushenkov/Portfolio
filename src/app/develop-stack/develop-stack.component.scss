@@ -1,4 +1,10 @@
 .card:hover {
   transform: translateY(-5px) translate(5px, -5px) scale(0.98);
-  transition: 1s;
+  transition: 0.8s;
+}
+.card-img-top {
+  height: 170px;
+}
+.card-body {
+  padding: 1rem 0.5rem;
 }
