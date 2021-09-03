@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "mdb-angular-ui-kit-free"
+  "defaultProject": "mdb-angular-ui-kit-free",
+  "cli": {
+    "analytics": false
+  }
 }
