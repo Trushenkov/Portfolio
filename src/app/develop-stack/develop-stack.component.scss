@@ -1,6 +1,7 @@
 .card:hover {
   transform: translateY(-5px) translate(5px, -5px) scale(0.98);
-  transition: 0.8s;
+  cursor: pointer;
+  transition: 1.2s;
 }
 .card-img-top {
   height: 170px;

@@ -1,3 +1,4 @@
+import { TitleService } from './../title.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./develop-stack.component.scss'],
 })
 export class DevelopStackComponent implements OnInit {
-  constructor() {}
+  constructor(private titleService: TitleService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.titleService.setTitle('Development Stack');
+  }
 }

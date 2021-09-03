@@ -2,7 +2,6 @@ import { AboutComponent } from './about/about.component';
 import { DevelopStackComponent } from './develop-stack/develop-stack.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 

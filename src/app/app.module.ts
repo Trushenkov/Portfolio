@@ -26,7 +26,7 @@ import { AboutComponent } from './about/about.component';
     BrowserModule,
     MdbModule,
     BrowserAnimationsModule,
-    AppRoutingModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent],
