@@ -1,7 +1,12 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light shadow-1-strong">
   <div class="container justify-content-between">
-    <a class="navbar-brand" [routerLink]="['/']" routerLinkActive="active">
+    <a
+      class="navbar-brand"
+      [routerLink]="['/']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
       <img
         src="../../assets/images/logo.png"
         height="30"
