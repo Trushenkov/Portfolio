@@ -1,32 +1,33 @@
-<div class="container">
-  <div class="row">
-    <header>
+<div class="container-fluid p-0 m-0">
+  <div class="row p-0 m-0">
+    <header class="p-0 m-0">
       <!-- Background image -->
       <div
         id="intro-example"
-        class="p-5 text-center bg-image"
+        class="p-5 text-center bg-image m-0"
         style="
           background-image: url('https://media.kingston.com/kingston/hero/ktc-articles-solutions-speed-up-your-mac-hero-lg.jpg');
+          height: calc(100vh - 7rem);
         "
       >
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
+        <div class="mask p-0 m-0" style="background-color: rgba(0, 0, 0, 0.75)">
           <div class="d-flex justify-content-center align-items-center h-100">
-            <div class="text-white">
+            <div class="text-light">
               <h1 class="mb-3">Welcome on my portfolio</h1>
               <h5 class="mb-4">I want to present my projects for you!</h5>
               <a
                 class="btn btn-outline-light btn-lg m-2"
-                [routerLink]="['/features']"
+                [routerLink]="['/projects']"
                 role="button"
                 rel="nofollow"
-                >View projects</a
+                ><i class="fas fa-bars"></i> View projects</a
               >
               <a
                 class="btn btn-outline-light btn-lg m-2"
                 href="mailto:diman28051999@gmail.com"
                 target="_blank"
                 role="button"
-                >Send mail</a
+                ><i class="fas fa-envelope"></i> Send mail</a
               >
             </div>
           </div>

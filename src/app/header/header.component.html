@@ -1,7 +1,7 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white">
+<nav class="navbar navbar-expand-lg navbar-light shadow-1-strong">
   <div class="container">
-    <a class="navbar-brand">
+    <a class="navbar-brand" [routerLink]="['/']" routerLinkActive="active">
       <img
         src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png"
         height="30"
@@ -42,7 +42,7 @@
           <a
             (click)="basicNavbar.toggle()"
             class="nav-link"
-            [routerLink]="['/features']"
+            [routerLink]="['/projects']"
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
             >Projects <span class="badge bg-success">Completed</span></a
@@ -52,7 +52,7 @@
           <a
             (click)="basicNavbar.toggle()"
             class="nav-link"
-            [routerLink]="['/pricing']"
+            [routerLink]="['/develop-stack']"
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
             >Language Skills</a

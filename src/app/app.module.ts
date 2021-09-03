@@ -6,10 +6,10 @@ import { MdbModule } from 'mdb-angular-ui-kit';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { MainContentComponent } from './main-content/main-content.component';
+import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
-import { FeaturesComponent } from './features/features.component';
-import { PricingComponent } from './pricing/pricing.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { DevelopStackComponent } from './develop-stack/develop-stack.component';
 import { AboutComponent } from './about/about.component';
 
 @NgModule({
@@ -17,18 +17,18 @@ import { AboutComponent } from './about/about.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    MainContentComponent,
-    FeaturesComponent,
-    PricingComponent,
-    AboutComponent
+    HomeComponent,
+    ProjectsComponent,
+    DevelopStackComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
     MdbModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

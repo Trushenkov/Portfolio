@@ -1,15 +1,15 @@
 import { AboutComponent } from './about/about.component';
-import { PricingComponent } from './pricing/pricing.component';
-import { MainContentComponent } from './main-content/main-content.component';
-import { FeaturesComponent } from './features/features.component';
+import { DevelopStackComponent } from './develop-stack/develop-stack.component';
+import { HomeComponent } from './home/home.component';
+import { ProjectsComponent } from './projects/projects.component';
 import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', component: MainContentComponent, pathMatch: 'full' },
-  { path: 'features', component: FeaturesComponent },
-  { path: 'pricing', component: PricingComponent },
+  { path: '', component: HomeComponent, pathMatch: 'full' },
+  { path: 'projects', component: ProjectsComponent },
+  { path: 'develop-stack', component: DevelopStackComponent },
   { path: 'about', component: AboutComponent },
 ];
 
