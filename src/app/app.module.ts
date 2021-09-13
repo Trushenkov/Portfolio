@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ProjectsComponent } from './projects/projects.component';
 import { DevelopStackComponent } from './develop-stack/develop-stack.component';
 import { AboutComponent } from './about/about.component';
+import { AchievementsComponent } from './achievements/achievements.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { AboutComponent } from './about/about.component';
     ProjectsComponent,
     DevelopStackComponent,
     AboutComponent,
+    AchievementsComponent,
   ],
   imports: [
     BrowserModule,

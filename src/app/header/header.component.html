@@ -17,7 +17,7 @@
     >
       <img
         src="../../assets/images/logo.png"
-        height="30"
+        height="30px"
         alt="Logo"
         loading="lazy"
       />
@@ -70,6 +70,16 @@
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
             ><i class="fab fa-stack-overflow"></i> Development Stack</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            (click)="basicNavbar.toggle()"
+            class="nav-link"
+            [routerLink]="['/achievements']"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          ><i class="fas fa-trophy"></i> Achievements</a
           >
         </li>
         <li class="nav-item">
