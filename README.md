@@ -10,3 +10,5 @@
 ---
 
 # Demo
+[Open website](https://trushenkov-dmi-portfolio.netlify.app/)
+
