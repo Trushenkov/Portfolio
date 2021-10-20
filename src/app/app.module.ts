@@ -12,6 +12,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { DevelopStackComponent } from './develop-stack/develop-stack.component';
 import { AboutComponent } from './about/about.component';
 import { AchievementsComponent } from './achievements/achievements.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { AchievementsComponent } from './achievements/achievements.component';
     DevelopStackComponent,
     AboutComponent,
     AchievementsComponent,
+    ErrorPageComponent,
   ],
   imports: [
     BrowserModule,
