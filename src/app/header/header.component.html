@@ -2,9 +2,10 @@
 <nav
   class="
     navbar
-    bg-light
+    navbar-dark
+    bg-dark
     fixed-top
-    navbar-expand-lg navbar-light
+    navbar-expand-lg
     shadow-1-strong
   "
 >
@@ -34,7 +35,7 @@
             [routerLink]="['/']"
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
-          ><i class="fas fa-home"></i> Home</a
+          ><i class="fas fa-home"></i> Главная</a
           >
         </li>
         <li class="nav-item">
@@ -45,7 +46,7 @@
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
           >
-            <i class="fas fa-bars"></i> Projects<span class="badge rounded-pill badge-notification bg-success">3</span>
+            <i class="fas fa-bars"></i> Проекты<span class="badge rounded-pill badge-notification bg-success">3</span>
           </a
           >
         </li>
@@ -56,7 +57,7 @@
             [routerLink]="['/develop-stack']"
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
-          ><i class="fab fa-stack-overflow"></i> Development Stack</a
+          ><i class="fab fa-stack-overflow"></i> Стек разработки</a
           >
         </li>
         <li class="nav-item">
@@ -67,7 +68,7 @@
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
           >
-            <i class="fas fa-bars"></i>Achievements<span class="badge rounded-pill badge-notification bg-danger">3</span></a
+            <i class="fas fa-bars"></i> Достижения<span class="badge rounded-pill badge-notification bg-danger">3</span></a
           >
         </li>
         <li class="nav-item">
@@ -77,7 +78,7 @@
             [routerLink]="['/about']"
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
-          ><i class="far fa-user-circle"></i> About</a
+          ><i class="far fa-user-circle"></i> Информация обо мне</a
           >
         </li>
       </ul>
