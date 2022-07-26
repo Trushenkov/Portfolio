@@ -1,9 +1,34 @@
 <div class="container">
+  <div class="row" style="width: 100%;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          (click)="centered.toggle()"
+          aria-controls="navbarCenteredExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
 
-  <div class="row">
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarCenteredExample"
+          mdbCollapse
+          #centered="mdbCollapse">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item" *ngFor="let cat of categories;">
+              <a class="nav-link" style="cursor: pointer;" (click)="setCategory(cat)"  [ngClass]="{'active' : cat == selectedCategory}">{{cat}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- WorldSkills -->
-    <div class="my-3 card flex-column flex-md-column flex-lg-row flex-xl-row flex-xxl-row flex-sm-column">
+    <div class="my-3 card flex-column flex-md-column flex-lg-row flex-xl-row flex-xxl-row flex-sm-column"
+         *ngIf="this.selectedCategory == categories[1] || this.selectedCategory == categories[0]">
       <!-- Описание (текст) -->
       <div class="card-body">
         <h5 class="card-title">Региональный чемпионат профмастерства «Молодые профессионалы» в формате
@@ -28,11 +53,13 @@
     </div>
 
     <!-- Сертификат "Нетология" (Как стать программистом) -->
-    <div class="my-3 card flex-column flex-md-column flex-lg-row flex-xl-row flex-xxl-row flex-sm-column">
+    <div class="my-3 card flex-column flex-md-column flex-lg-row flex-xl-row flex-xxl-row flex-sm-column"
+         *ngIf="this.selectedCategory == categories[2] || this.selectedCategory == categories[0]">
       <!-- Изображение -->
       <div
         class="order-2 order-sm-2 order-md-2 order-lg-1 order-xl-1 order-xxl-1 col-12 col-md-12 col-lg-8 col-xl-6 col-xxl-7 col-sm-12 shadow-1-strong">
-        <img alt="Netology certificate 'How to become a programmer'" class="w-100 hover-shadow rounded" src="assets/images/certificate_netology.png"/>
+        <img alt="Netology certificate 'How to become a programmer'" class="w-100 hover-shadow rounded"
+             src="assets/images/certificate_netology.png"/>
       </div>
       <!-- Описание (текст) -->
       <div class="order-1 order-sm-1 order-md-1 order-lg-2 order-xl-2 order-xxl-2 mx-lg-5 mx-xl-5 mx-xxl-5 card-body">
@@ -45,7 +72,8 @@
     </div>
 
     <!-- ИТ-диктант -->
-    <div class="my-3 card flex-column flex-md-column flex-lg-row flex-xl-row flex-xxl-row flex-sm-column">
+    <div class="my-3 card flex-column flex-md-column flex-lg-row flex-xl-row flex-xxl-row flex-sm-column"
+         *ngIf="this.selectedCategory == categories[2] || this.selectedCategory == categories[0]">
       <!-- Описание (текст) -->
       <div class="card-body">
         <h5 class="card-title">Всероссийский диктант по информационным технологиям «ИТ-диктант»</h5>
@@ -63,6 +91,5 @@
              src="assets/images/certificate.png"/>
       </div>
     </div>
-
   </div>
 </div>
