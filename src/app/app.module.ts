@@ -4,15 +4,15 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MdbModule } from 'mdb-angular-ui-kit';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ProjectsComponent } from './projects/projects.component';
-import { DevelopStackComponent } from './develop-stack/develop-stack.component';
-import { AboutComponent } from './about/about.component';
-import { AchievementsComponent } from './achievements/achievements.component';
-import { ErrorPageComponent } from './error-page/error-page.component';
+import { DevelopStackComponent } from './components/develop-stack/develop-stack.component';
+import { AboutComponent } from './components/about/about.component';
+import { AchievementsComponent } from './components/achievements/achievements.component';
+import { ErrorPageComponent } from './components/error-page/error-page.component';
 
 @NgModule({
   declarations: [
