@@ -1,7 +1,7 @@
 import {AboutComponent} from './components/about/about.component';
 import {DevelopStackComponent} from './components/develop-stack/develop-stack.component';
 import {HomeComponent} from './components/home/home.component';
-import {ProjectsComponent} from './projects/projects.component';
+import {ProjectsComponent} from './components/projects/projects.component';
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {AchievementsComponent} from './components/achievements/achievements.component';

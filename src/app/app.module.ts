@@ -8,7 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ProjectsComponent } from './projects/projects.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 import { DevelopStackComponent } from './components/develop-stack/develop-stack.component';
 import { AboutComponent } from './components/about/about.component';
 import { AchievementsComponent } from './components/achievements/achievements.component';
