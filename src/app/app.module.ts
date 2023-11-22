@@ -13,6 +13,7 @@ import { DevelopStackComponent } from './components/develop-stack/develop-stack.
 import { AboutComponent } from './components/about/about.component';
 import { AchievementsComponent } from './components/achievements/achievements.component';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [

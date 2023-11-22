@@ -33,8 +33,8 @@
             (click)="basicNavbar.toggle()"
             class="nav-link"
             [routerLink]="['/']"
-            routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: true }"
+            [routerLinkActive]="['active']"
+            [routerLinkActiveOptions]='{exact: true}'
           ><i class="fas fa-home"></i> Главная</a
           >
         </li>
@@ -43,8 +43,8 @@
             (click)="basicNavbar.toggle()"
             class="nav-link"
             [routerLink]="['/projects']"
-            routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: true }"
+            [routerLinkActiveOptions]='{exact: true}'
+            [routerLinkActive]="['active']"
           >
             <i class="fas fa-bars"></i> Проекты<span class="badge rounded-pill badge-notification bg-success">3</span>
           </a
@@ -55,8 +55,8 @@
             (click)="basicNavbar.toggle()"
             class="nav-link"
             [routerLink]="['/develop-stack']"
-            routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: true }"
+            [routerLinkActive]="['active']"
+            [routerLinkActiveOptions]='{exact: true}'
           ><i class="fab fa-stack-overflow"></i> Стек разработки</a
           >
         </li>
@@ -65,8 +65,8 @@
             (click)="basicNavbar.toggle()"
             class="nav-link"
             [routerLink]="['/achievements']"
-            routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: true }"
+            [routerLinkActive]="['active']"
+            [routerLinkActiveOptions]='{exact: true}'
           >
             <i class="fas fa-bars"></i> Достижения<span class="badge rounded-pill badge-notification bg-danger">3</span></a
           >
@@ -76,8 +76,8 @@
             (click)="basicNavbar.toggle()"
             class="nav-link"
             [routerLink]="['/about']"
-            routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: true }"
+            [routerLinkActive]="['active']"
+            [routerLinkActiveOptions]='{exact: true}'
           ><i class="far fa-user-circle"></i> Информация обо мне</a
           >
         </li>
